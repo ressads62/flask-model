@@ -1,0 +1,53 @@
+{
+  "dataset": "Diabetes Regression Dataset",
+  "task": "regression",
+  "feature_names": [
+    "age",
+    "sex",
+    "bmi",
+    "bp",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6"
+  ],
+  "target": "diabetes disease progression score",
+  "test_size": 0.2,
+  "random_state": 42,
+  "selection_metric": "lowest_rmse",
+  "selected_model": "linear_regression",
+  "results": [
+    {
+      "model": "linear_regression",
+      "rmse": 58.0618,
+      "mae": 47.0479,
+      "r2": 0.4351
+    },
+    {
+      "model": "random_forest",
+      "rmse": 59.5707,
+      "mae": 48.3039,
+      "r2": 0.4054
+    },
+    {
+      "model": "svm",
+      "rmse": 61.9238,
+      "mae": 49.7887,
+      "r2": 0.3575
+    },
+    {
+      "model": "xgboost",
+      "rmse": 61.9873,
+      "mae": 50.0895,
+      "r2": 0.3562
+    },
+    {
+      "model": "decision_tree",
+      "rmse": 66.2035,
+      "mae": 51.7271,
+      "r2": 0.2656
+    }
+  ]
+}
